@@ -1,0 +1,39 @@
+mat-card {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #FFFBF5;
+}
+
+mat-form-field {
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
+}
+
+input[matInput], textarea[matInput] {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+}
+
+textarea[matInput] {
+  resize: vertical;
+  min-height: 120px;
+}
+
+mat-error {
+  font-size: 14px;
+  color: #493D9E;
+}
+
+button[mat-raised-button] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}

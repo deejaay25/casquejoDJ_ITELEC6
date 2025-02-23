@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #C5BAFF; /* Light purple background */
+  }
+
+  .container {
+    background-color: #D1C4E9; /* Soft purple */
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #6A1B9A; /* Deep purple */
+    margin-bottom: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #F7F9F2; /* Medium purple */
+    border-radius: 10px;
+  }
+
+  app-post-create, app-post-list {
+    background-color: #F7F9F2; /* Darker purple */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
