@@ -13,7 +13,7 @@ mat-card {
 
   mat-expansion-panel {
     background-color: #F7EFE5;
-    color: white;
+    color: #000;
     border-radius: 8px;
     margin-bottom: 10px;
   }
@@ -38,7 +38,7 @@ mat-card {
 
   button[mat-flat-button] {
     background-color: #FFFBF5;
-    color: #;
+    color: #000;
     font-weight: bold;
     border-radius: 8px;
   }
