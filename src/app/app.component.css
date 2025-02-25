@@ -6,11 +6,11 @@ body {
     margin: 0;
     width: 100%;
     font-family: Arial, sans-serif;
-    background-color: #C5BAFF; /* Light purple background */
+    background-color: #C5BAFF; 
   }
 
   .container {
-    background-color: #D1C4E9; /* Soft purple */
+    background-color: #D1C4E9; 
     width: 80%;
     max-width: 900px;
     padding: 20px;
@@ -23,7 +23,7 @@ body {
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #6A1B9A; /* Deep purple */
+    color: #6A1B9A; 
     margin-bottom: 20px;
   }
 
