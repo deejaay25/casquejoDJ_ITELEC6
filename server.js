@@ -1,32 +1,34 @@
 const http = require('http');
 const app = require('./backend/app');
+// const { debug } = require("console");
 const debug = require("debug")("node-angular");
 
-function normalizePort(val) {
+const normalizePort = val => {
     var port = parseInt(val, 10);
-    if (isNaN(port)) {
-        return val; 
+
+    if (isNaN(port)){
+        return val;
     }
-    if (port >= 0) {
+
+    if (port>=0){
         return port;
     }
-    return false;
-}
 
-const onError = error => {
+    return false;
+};
+
+const onError = (error) => {
     if (error.syscall !== "listen") {
         throw error;
     }
-
-    const bind = typeof port === "string" ? "pipe " + port : "port " + port;
-
+    const bind = typeof server.address() === "string" ? "pipe " + server.address() : "port " + port;
     switch (error.code) {
-        case "EACCES":  
+        case "EACCES":
             console.error(bind + " requires elevated privileges");
             process.exit(1);
             break;
         case "EADDRINUSE":
-            console.error(bind + " is already in use"); 
+            console.error(bind + " is already in use");
             process.exit(1);
             break;
         default:
@@ -35,8 +37,8 @@ const onError = error => {
 };
 
 const onListening = () => {
-    const addr = server.address(); 
-    const bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
+    const addr = server.address();
+    const bind = typeof addr === "string" ? "pipe " + addr : "port " + port;
     debug("Listening on " + bind);
 };
 
